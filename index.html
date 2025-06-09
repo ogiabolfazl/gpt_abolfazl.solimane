@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شاندوز - دستیار هوش مصنوعی شما</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- مسیر دهی به فایل CSS و JS به صورت مستقیم، چون دیگه Flask نداریم -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>شاندوز <span class="ai-label">AI</span></h1>
+            <p>دستیار هوش مصنوعی شما</p>
+        </header>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai-message">
+                <p>سلام! من شاندوز هستم، چطور می‌تونم کمکتون کنم؟</p>
+                <div class="message-meta">شاندوز - هوش مصنوعی</div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <textarea id="userInput" placeholder="پیام خود را بنویسید..."></textarea>
+            <button onclick="sendRequest()">ارسال</button>
+        </div>
+    </div>
+    <!-- مسیر دهی به فایل JS به صورت مستقیم -->
+    <script src="script.js"></script>
+</body>
+                         </html>
